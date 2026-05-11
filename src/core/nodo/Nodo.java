@@ -26,7 +26,7 @@ public abstract class Nodo {
         this.sig = sig;
     }
 
-    public Nodo getInfo() {
+    public HashMap<String, String> getInfo() {
         return info;
     }
 

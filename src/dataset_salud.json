@@ -1,0 +1,634 @@
+{
+    "eps": [
+        {
+            "eps_id": 1,
+            "nit": "800.123.456-7",
+            "nombre": "EPS SURA",
+            "direccion": "Calle 50 #25-20, Medellín",
+            "telefono": "604-5678901",
+            "ips": [
+                {
+                    "ips_id": 201,
+                    "nit": "800.199.555-4",
+                    "nombre": "Clínica Colsanitas",
+                    "direccion": "Carrera 11 #82-85, Bogotá",
+                    "telefono": "601-7494949",
+                    "pacientes": [
+                        {
+                            "paciente_id": "201-001",
+                            "nombre": "Andrés Melo",
+                            "documento": "54724326",
+                            "edad": 78,
+                            "sexo": "M",
+                            "fecha_ingreso": "2018-11-25",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "201-002",
+                            "nombre": "Mateo Morales",
+                            "documento": "84684663",
+                            "edad": 42,
+                            "sexo": "F",
+                            "fecha_ingreso": "2021-05-10",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "201-003",
+                            "nombre": "Carlos Rodríguez",
+                            "documento": "31825643",
+                            "edad": 53,
+                            "sexo": "M",
+                            "fecha_ingreso": "2020-05-21",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "201-004",
+                            "nombre": "Natalia Rojas",
+                            "documento": "99765316",
+                            "edad": 82,
+                            "sexo": "F",
+                            "fecha_ingreso": "2020-04-11",
+                            "diagnostico": "Migraña"
+                        },
+                        {
+                            "paciente_id": "201-005",
+                            "nombre": "Sofía Herrera",
+                            "documento": "35279963",
+                            "edad": 47,
+                            "sexo": "M",
+                            "fecha_ingreso": "2018-04-27",
+                            "diagnostico": "Asma"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 2,
+            "nit": "800.444.555-2",
+            "nombre": "Nueva EPS",
+            "direccion": "Calle 72 #11-15, Bogotá",
+            "telefono": "601-3402100",
+            "ips": [
+                {
+                    "ips_id": 202,
+                    "nit": "800.123.789-0",
+                    "nombre": "Fundación Santa Fe de Bogotá",
+                    "direccion": "Carrera 7 #117-15, Bogotá",
+                    "telefono": "601-6278300",
+                    "pacientes": [
+                        {
+                            "paciente_id": "202-001",
+                            "nombre": "Luis Ramírez",
+                            "documento": "65897248",
+                            "edad": 54,
+                            "sexo": "M",
+                            "fecha_ingreso": "2022-02-25",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "202-002",
+                            "nombre": "David Ramírez",
+                            "documento": "61102798",
+                            "edad": 64,
+                            "sexo": "M",
+                            "fecha_ingreso": "2016-10-14",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "202-003",
+                            "nombre": "Laura Medina",
+                            "documento": "67427133",
+                            "edad": 32,
+                            "sexo": "F",
+                            "fecha_ingreso": "2022-11-22",
+                            "diagnostico": "Obesidad"
+                        },
+                        {
+                            "paciente_id": "202-004",
+                            "nombre": "Catalina Suárez",
+                            "documento": "10152176",
+                            "edad": 75,
+                            "sexo": "M",
+                            "fecha_ingreso": "2024-11-22",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "202-005",
+                            "nombre": "Carlos Rodríguez",
+                            "documento": "90828876",
+                            "edad": 8,
+                            "sexo": "F",
+                            "fecha_ingreso": "2019-10-27",
+                            "diagnostico": "Asma"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 3,
+            "nit": "800.666.777-3",
+            "nombre": "Coomeva EPS",
+            "direccion": "Carrera 2 #5-65, Cali",
+            "telefono": "602-3851234",
+            "ips": [
+                {
+                    "ips_id": 203,
+                    "nit": "800.222.333-5",
+                    "nombre": "Hospital San Vicente Fundación",
+                    "direccion": "Calle 54B #67B-90, Rionegro",
+                    "telefono": "604-4443333",
+                    "pacientes": [
+                        {
+                            "paciente_id": "203-001",
+                            "nombre": "Sara Vargas",
+                            "documento": "49550988",
+                            "edad": 39,
+                            "sexo": "F",
+                            "fecha_ingreso": "2020-04-11",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "203-002",
+                            "nombre": "Pedro Castillo",
+                            "documento": "31340106",
+                            "edad": 88,
+                            "sexo": "M",
+                            "fecha_ingreso": "2017-07-16",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "203-003",
+                            "nombre": "Diego Torres",
+                            "documento": "21873632",
+                            "edad": 60,
+                            "sexo": "F",
+                            "fecha_ingreso": "2022-01-16",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "203-004",
+                            "nombre": "Luisa Fernández",
+                            "documento": "25732188",
+                            "edad": 71,
+                            "sexo": "F",
+                            "fecha_ingreso": "2021-06-14",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "203-005",
+                            "nombre": "Luisa Fernández",
+                            "documento": "91083985",
+                            "edad": 75,
+                            "sexo": "F",
+                            "fecha_ingreso": "2022-10-31",
+                            "diagnostico": "Artritis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 4,
+            "nit": "800.888.999-1",
+            "nombre": "Salud Total EPS",
+            "direccion": "Carrera 9 #12-34, Barranquilla",
+            "telefono": "605-3850123",
+            "ips": [
+                {
+                    "ips_id": 204,
+                    "nit": "800.555.666-2",
+                    "nombre": "Clínica Medellín",
+                    "direccion": "Av. Las Palmas #65-90, Medellín",
+                    "telefono": "604-4444444",
+                    "pacientes": [
+                        {
+                            "paciente_id": "204-001",
+                            "nombre": "Luis Ramírez",
+                            "documento": "51198980",
+                            "edad": 51,
+                            "sexo": "F",
+                            "fecha_ingreso": "2018-07-18",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "204-002",
+                            "nombre": "Carlos Rodríguez",
+                            "documento": "51122757",
+                            "edad": 24,
+                            "sexo": "F",
+                            "fecha_ingreso": "2018-12-29",
+                            "diagnostico": "Migraña"
+                        },
+                        {
+                            "paciente_id": "204-003",
+                            "nombre": "Laura Medina",
+                            "documento": "26430327",
+                            "edad": 42,
+                            "sexo": "M",
+                            "fecha_ingreso": "2022-03-10",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "204-004",
+                            "nombre": "Clara López",
+                            "documento": "92713665",
+                            "edad": 35,
+                            "sexo": "F",
+                            "fecha_ingreso": "2022-07-05",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "204-005",
+                            "nombre": "Sara Vargas",
+                            "documento": "47573876",
+                            "edad": 75,
+                            "sexo": "M",
+                            "fecha_ingreso": "2015-07-06",
+                            "diagnostico": "Obesidad"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 5,
+            "nit": "800.111.222-8",
+            "nombre": "EPS Famisanar",
+            "direccion": "Calle 45 #8-22, Bucaramanga",
+            "telefono": "607-6342100",
+            "ips": [
+                {
+                    "ips_id": 205,
+                    "nit": "800.777.888-1",
+                    "nombre": "Hospital Universitario San Ignacio",
+                    "direccion": "Carrera 7 #40-62, Bogotá",
+                    "telefono": "601-2569000",
+                    "pacientes": [
+                        {
+                            "paciente_id": "205-001",
+                            "nombre": "Jorge Castro",
+                            "documento": "83374339",
+                            "edad": 22,
+                            "sexo": "F",
+                            "fecha_ingreso": "2017-07-17",
+                            "diagnostico": "Migraña"
+                        },
+                        {
+                            "paciente_id": "205-002",
+                            "nombre": "David Ramírez",
+                            "documento": "36690255",
+                            "edad": 78,
+                            "sexo": "F",
+                            "fecha_ingreso": "2016-06-11",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "205-003",
+                            "nombre": "Clara López",
+                            "documento": "94445778",
+                            "edad": 9,
+                            "sexo": "M",
+                            "fecha_ingreso": "2022-11-06",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "205-004",
+                            "nombre": "Luis Ramírez",
+                            "documento": "26978968",
+                            "edad": 55,
+                            "sexo": "F",
+                            "fecha_ingreso": "2023-08-01",
+                            "diagnostico": "Asma"
+                        },
+                        {
+                            "paciente_id": "205-005",
+                            "nombre": "David Ramírez",
+                            "documento": "27448239",
+                            "edad": 5,
+                            "sexo": "F",
+                            "fecha_ingreso": "2025-04-04",
+                            "diagnostico": "Artritis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 6,
+            "nit": "800.333.444-5",
+            "nombre": "EPS Sanitas",
+            "direccion": "Av. Caracas #68-50, Bogotá",
+            "telefono": "601-7589000",
+            "ips": [
+                {
+                    "ips_id": 206,
+                    "nit": "800.888.444-2",
+                    "nombre": "Clínica Shaio",
+                    "direccion": "Carrera 9 #94-25, Bogotá",
+                    "telefono": "601-6291000",
+                    "pacientes": [
+                        {
+                            "paciente_id": "206-001",
+                            "nombre": "Andrés Melo",
+                            "documento": "36462919",
+                            "edad": 64,
+                            "sexo": "M",
+                            "fecha_ingreso": "2022-05-23",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "206-002",
+                            "nombre": "David Ramírez",
+                            "documento": "74478423",
+                            "edad": 60,
+                            "sexo": "F",
+                            "fecha_ingreso": "2017-12-14",
+                            "diagnostico": "Artritis"
+                        },
+                        {
+                            "paciente_id": "206-003",
+                            "nombre": "Sara Vargas",
+                            "documento": "66832636",
+                            "edad": 24,
+                            "sexo": "M",
+                            "fecha_ingreso": "2021-05-21",
+                            "diagnostico": "Asma"
+                        },
+                        {
+                            "paciente_id": "206-004",
+                            "nombre": "Natalia Rojas",
+                            "documento": "25345877",
+                            "edad": 86,
+                            "sexo": "M",
+                            "fecha_ingreso": "2019-08-06",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "206-005",
+                            "nombre": "Laura Medina",
+                            "documento": "52032863",
+                            "edad": 52,
+                            "sexo": "F",
+                            "fecha_ingreso": "2024-08-28",
+                            "diagnostico": "Asma"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 7,
+            "nit": "800.555.111-4",
+            "nombre": "Savia Salud EPS",
+            "direccion": "Calle 23 #2-56, Neiva",
+            "telefono": "608-8765432",
+            "ips": [
+                {
+                    "ips_id": 207,
+                    "nit": "800.101.202-3",
+                    "nombre": "Hospital Militar Central",
+                    "direccion": "Calle 100 #11-95, Bogotá",
+                    "telefono": "601-3439000",
+                    "pacientes": [
+                        {
+                            "paciente_id": "207-001",
+                            "nombre": "Catalina Suárez",
+                            "documento": "94943659",
+                            "edad": 12,
+                            "sexo": "M",
+                            "fecha_ingreso": "2016-12-06",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "207-002",
+                            "nombre": "Luisa Fernández",
+                            "documento": "79646123",
+                            "edad": 55,
+                            "sexo": "M",
+                            "fecha_ingreso": "2016-03-18",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "207-003",
+                            "nombre": "Sara Vargas",
+                            "documento": "20940868",
+                            "edad": 43,
+                            "sexo": "F",
+                            "fecha_ingreso": "2023-09-12",
+                            "diagnostico": "Artritis"
+                        },
+                        {
+                            "paciente_id": "207-004",
+                            "nombre": "Catalina Suárez",
+                            "documento": "62897972",
+                            "edad": 7,
+                            "sexo": "M",
+                            "fecha_ingreso": "2018-06-02",
+                            "diagnostico": "Artritis"
+                        },
+                        {
+                            "paciente_id": "207-005",
+                            "nombre": "Natalia Rojas",
+                            "documento": "64653954",
+                            "edad": 2,
+                            "sexo": "M",
+                            "fecha_ingreso": "2025-03-15",
+                            "diagnostico": "Asma"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 8,
+            "nit": "800.222.999-6",
+            "nombre": "Compensar EPS",
+            "direccion": "Carrera 15 #108-30, Bogotá",
+            "telefono": "601-4829300",
+            "ips": [
+                {
+                    "ips_id": 208,
+                    "nit": "800.303.404-5",
+                    "nombre": "Clínica Del Country",
+                    "direccion": "Carrera 15 #85-94, Bogotá",
+                    "telefono": "601-6225000",
+                    "pacientes": [
+                        {
+                            "paciente_id": "208-001",
+                            "nombre": "Sofía Herrera",
+                            "documento": "59622376",
+                            "edad": 15,
+                            "sexo": "F",
+                            "fecha_ingreso": "2020-03-14",
+                            "diagnostico": "Migraña"
+                        },
+                        {
+                            "paciente_id": "208-002",
+                            "nombre": "Andrés Melo",
+                            "documento": "50252342",
+                            "edad": 77,
+                            "sexo": "M",
+                            "fecha_ingreso": "2024-03-21",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "208-003",
+                            "nombre": "Natalia Rojas",
+                            "documento": "48253354",
+                            "edad": 18,
+                            "sexo": "F",
+                            "fecha_ingreso": "2018-08-21",
+                            "diagnostico": "Artritis"
+                        },
+                        {
+                            "paciente_id": "208-004",
+                            "nombre": "Jorge Castro",
+                            "documento": "90093776",
+                            "edad": 55,
+                            "sexo": "F",
+                            "fecha_ingreso": "2023-01-31",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "208-005",
+                            "nombre": "Sara Vargas",
+                            "documento": "67704347",
+                            "edad": 81,
+                            "sexo": "F",
+                            "fecha_ingreso": "2019-10-14",
+                            "diagnostico": "Migraña"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 9,
+            "nit": "800.777.333-2",
+            "nombre": "Salud Vida EPS",
+            "direccion": "Calle 18 #7-45, Pereira",
+            "telefono": "604-3217654",
+            "ips": [
+                {
+                    "ips_id": 209,
+                    "nit": "800.505.606-7",
+                    "nombre": "Clínica Reina Sofía",
+                    "direccion": "Carrera 7 #72-61, Bogotá",
+                    "telefono": "601-6221112",
+                    "pacientes": [
+                        {
+                            "paciente_id": "209-001",
+                            "nombre": "Laura Medina",
+                            "documento": "15156299",
+                            "edad": 36,
+                            "sexo": "F",
+                            "fecha_ingreso": "2016-02-28",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "209-002",
+                            "nombre": "Andrés Melo",
+                            "documento": "68607686",
+                            "edad": 38,
+                            "sexo": "M",
+                            "fecha_ingreso": "2017-03-28",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "209-003",
+                            "nombre": "David Ramírez",
+                            "documento": "35313037",
+                            "edad": 77,
+                            "sexo": "M",
+                            "fecha_ingreso": "2023-03-30",
+                            "diagnostico": "Obesidad"
+                        },
+                        {
+                            "paciente_id": "209-004",
+                            "nombre": "Catalina Suárez",
+                            "documento": "98919767",
+                            "edad": 78,
+                            "sexo": "M",
+                            "fecha_ingreso": "2023-04-20",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "209-005",
+                            "nombre": "Luis Ramírez",
+                            "documento": "80371736",
+                            "edad": 65,
+                            "sexo": "M",
+                            "fecha_ingreso": "2019-05-03",
+                            "diagnostico": "Diabetes"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "eps_id": 10,
+            "nit": "800.999.000-3",
+            "nombre": "Mutual SER EPS",
+            "direccion": "Carrera 10 #24-16, Manizales",
+            "telefono": "606-5321000",
+            "ips": [
+                {
+                    "ips_id": 210,
+                    "nit": "800.707.808-9",
+                    "nombre": "Hospital Universitario San José",
+                    "direccion": "Carrera 5 #26-53, Popayán",
+                    "telefono": "602-8201234",
+                    "pacientes": [
+                        {
+                            "paciente_id": "210-001",
+                            "nombre": "Sofía Herrera",
+                            "documento": "69359302",
+                            "edad": 33,
+                            "sexo": "F",
+                            "fecha_ingreso": "2021-04-21",
+                            "diagnostico": "Hipertensión"
+                        },
+                        {
+                            "paciente_id": "210-002",
+                            "nombre": "Pedro Castillo",
+                            "documento": "44711492",
+                            "edad": 54,
+                            "sexo": "F",
+                            "fecha_ingreso": "2022-06-25",
+                            "diagnostico": "Gripe"
+                        },
+                        {
+                            "paciente_id": "210-003",
+                            "nombre": "Valentina Ruiz",
+                            "documento": "16214903",
+                            "edad": 37,
+                            "sexo": "M",
+                            "fecha_ingreso": "2019-11-09",
+                            "diagnostico": "Diabetes"
+                        },
+                        {
+                            "paciente_id": "210-004",
+                            "nombre": "Clara López",
+                            "documento": "68893479",
+                            "edad": 38,
+                            "sexo": "F",
+                            "fecha_ingreso": "2019-09-04",
+                            "diagnostico": "COVID-19"
+                        },
+                        {
+                            "paciente_id": "210-005",
+                            "nombre": "Luis Ramírez",
+                            "documento": "77924536",
+                            "edad": 36,
+                            "sexo": "M",
+                            "fecha_ingreso": "2024-09-18",
+                            "diagnostico": "Diabetes"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

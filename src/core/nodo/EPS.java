@@ -8,6 +8,6 @@ package core.nodo;
  *
  * @author Gabriela Campo
  */
-public class NodoPaciente {
+public class EPS {
     
 }

@@ -6,8 +6,8 @@ import core.nodo.Nodo;
 import core.nodo.Paciente;
 
 public class Multilista {
-
     private EPS cabeza;
+
 
     public void insertarEPS(EPS eps) {
         if (cabeza == null) {
@@ -43,6 +43,7 @@ public class Multilista {
             ips.addPaciente(p);
         }
     }
+
 
     public EPS buscarEPS(String epsId) {
         Nodo actual = cabeza;
@@ -85,6 +86,7 @@ public class Multilista {
         }
         return null;
     }
+
 
     public boolean eliminarEPS(String epsId) {
         if (cabeza == null) {
@@ -129,6 +131,7 @@ public class Multilista {
         return false;
     }
 
+
     public void recorrer() {
         Nodo eps = cabeza;
         while (eps != null) {
@@ -169,5 +172,60 @@ public class Multilista {
         }
         return pacienteMayor;
     }
+    public void IPSconMasPacientes() {
+        Nodo eps = cabeza;
+        IPS mayor = null;
+        int mayorC = 0;
+        while (eps != null) {
+            Nodo ips = ((EPS) eps).getSubLista();
+            while (ips != null) {
+                int contador = ((IPS) ips).getPacientes().size();
+                if (mayor == null || contador > mayorC) {
+                    mayor = (IPS) ips;
+                    mayorC = contador;
+                }
+                ips = ips.getSiguiente();
+            }
+            eps = eps.getSiguiente();
+        }
+        if (mayor != null)
+            System.out.println("IPS con mas pacientes: " + mayor + " (" + mayorC + " pacientes)");
+    }
+
+    public int contarPacientesPorEPS(String epsId) {
+        EPS eps = buscarEPS(epsId);
+        if (eps == null) return 0;
+        int total = 0;
+        Nodo ips = eps.getSubLista();
+        while (ips != null) {
+            total += ((IPS) ips).getPacientes().size();
+            ips = ips.getSiguiente();
+        }
+        System.out.println("Pacientes en " + epsId + ": " + total);
+        return total;
+    }
+
+    public void EPSconMasIPS() {
+        Nodo eps = cabeza;
+        EPS mayor = null;
+        int mayorC = 0;
+        while (eps != null) {
+            int contador = 0;
+            Nodo ips = ((EPS) eps).getSubLista();
+            while (ips != null) {
+                contador++;
+                ips = ips.getSiguiente();
+            }
+            if (mayor == null || contador > mayorC) {
+                mayor = (EPS) eps;
+                mayorC = contador;
+            }
+            eps = eps.getSiguiente();
+        }
+        if (mayor != null)
+            System.out.println("EPS con mas IPS: " + mayor + " (" + mayorC + " IPS)");
+    }
 
 }
+
+    

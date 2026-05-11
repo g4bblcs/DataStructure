@@ -8,23 +8,26 @@ package core.multilista;
  *
  * @author Gabriela Campo
  */
+import core.nodo.EPS;
+import core.nodo.IPS;
+import core.nodo.Paciente;
 import java.util.HashMap;
 
 class MultilistaSalud {
-    NodoEPS cabezaEPS;
-    HashMap<String, NodoPaciente> indicePacientes;
+    EPS cabezaEPS;
+    HashMap<String, Paciente> indicePacientes;
 
     public MultilistaSalud() {
         this.cabezaEPS = null;
         this.indicePacientes = new HashMap<>();
     }
 
-    void agregarPaciente(NodoIPS ips, NodoPaciente nuevo) {
+    void agregarPaciente(IPS ips, Paciente nuevo) {
         // Lógica de punteros (Multilista)
         if (ips.cabezaPacientes == null) {
             ips.cabezaPacientes = nuevo;
         } else {
-            NodoPaciente actual = ips.cabezaPacientes;
+            Paciente actual = ips.cabezaPacientes;
             while (actual.siguiente != null) actual = (NodoPaciente) actual.siguiente;
             actual.siguiente = nuevo;
         }
@@ -36,7 +39,7 @@ class MultilistaSalud {
         return indicePacientes.get(documento);
     }
     
-    NodoIps
+    
     
     
 }

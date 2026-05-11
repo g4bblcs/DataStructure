@@ -1,38 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package core.nodo;
 
-import java.util.HashMap;
-
-/**
- *
- * @author krl0s
- */
 public abstract class Nodo {
-    protected Nodo sig = null;
-    protected HashMap<String, String> info;    
+    protected Object datos;
+    protected Nodo siguiente;
+    protected Nodo subLista;
 
-    public Nodo(HashMap info) {
-        this.info = info;
+    public Nodo(Object datos) {
+        this.datos = datos;
     }
 
-    public Nodo getSig() {
-        return sig;
-    }
+    public Nodo getSiguiente() { return siguiente; }
+    public void setSiguiente(Nodo siguiente) { this.siguiente = siguiente; }
 
-    public void setSig(Nodo sig) {
-        this.sig = sig;
-    }
+    public Nodo getSubLista() { return subLista; }
+    public void setSubLista(Nodo subLista) { this.subLista = subLista; }
 
-    public HashMap<String, String> getInfo() {
-        return info;
-    }
-
-    public void setInfo(HashMap info) {
-        this.info = info;
-    }
-    
-    
+    public Object getDatos() { return datos; }
+    public void setDatos(Object datos) { this.datos = datos; }
 }

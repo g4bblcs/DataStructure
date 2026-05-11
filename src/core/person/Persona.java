@@ -1,18 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package core.person;
 
-/**
- *
- * @author Gabriela Campo
- */
 public abstract class Persona {
-    String nombre, documento, sexo, fechaIng, diagnostico;
+    protected String nombre;
+    protected String documento;
+    protected int edad;
+    protected String sexo;
 
-    public Persona(String nombre) {
+    public Persona(String nombre, String documento, int edad, String sexo) {
         this.nombre = nombre;
+        this.documento = documento;
+        this.edad = edad;
+        this.sexo = sexo;
     }
 
+    public String getNombre() { return nombre; }
+    public String getDocumento() { return documento; }
+    public int getEdad() { return edad; }
+    public String getSexo() { return sexo; }
 }

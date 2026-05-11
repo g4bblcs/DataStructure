@@ -6,9 +6,8 @@ import core.nodo.Nodo;
 import core.nodo.Paciente;
 
 public class Multilista {
-    private EPS cabeza;
 
-    // --- Insertar ---
+    private EPS cabeza;
 
     public void insertarEPS(EPS eps) {
         if (cabeza == null) {
@@ -16,33 +15,41 @@ public class Multilista {
             return;
         }
         Nodo actual = cabeza;
-        while (actual.getSiguiente() != null) actual = actual.getSiguiente();
+        while (actual.getSiguiente() != null) {
+            actual = actual.getSiguiente();
+        }
         actual.setSiguiente(eps);
     }
 
     public void insertarIPS(String epsId, IPS ips) {
         EPS eps = buscarEPS(epsId);
-        if (eps == null) return;
+        if (eps == null) {
+            return;
+        }
         if (eps.getSubLista() == null) {
             eps.setSubLista(ips);
             return;
         }
         Nodo actual = eps.getSubLista();
-        while (actual.getSiguiente() != null) actual = actual.getSiguiente();
+        while (actual.getSiguiente() != null) {
+            actual = actual.getSiguiente();
+        }
         actual.setSiguiente(ips);
     }
 
     public void insertarPaciente(String ipsId, Paciente p) {
         IPS ips = buscarIPS(ipsId);
-        if (ips != null) ips.addPaciente(p);
+        if (ips != null) {
+            ips.addPaciente(p);
+        }
     }
-
-    // --- Buscar ---
 
     public EPS buscarEPS(String epsId) {
         Nodo actual = cabeza;
         while (actual != null) {
-            if (((EPS) actual).getEpsId().equals(epsId)) return (EPS) actual;
+            if (((EPS) actual).getEpsId().equals(epsId)) {
+                return (EPS) actual;
+            }
             actual = actual.getSiguiente();
         }
         return null;
@@ -53,7 +60,9 @@ public class Multilista {
         while (eps != null) {
             Nodo ips = ((EPS) eps).getSubLista();
             while (ips != null) {
-                if (((IPS) ips).getIpsId().equals(ipsId)) return (IPS) ips;
+                if (((IPS) ips).getIpsId().equals(ipsId)) {
+                    return (IPS) ips;
+                }
                 ips = ips.getSiguiente();
             }
             eps = eps.getSiguiente();
@@ -67,7 +76,9 @@ public class Multilista {
             Nodo ips = ((EPS) eps).getSubLista();
             while (ips != null) {
                 Paciente p = ((IPS) ips).buscarPaciente(pacienteId);
-                if (p != null) return p;
+                if (p != null) {
+                    return p;
+                }
                 ips = ips.getSiguiente();
             }
             eps = eps.getSiguiente();
@@ -75,10 +86,10 @@ public class Multilista {
         return null;
     }
 
-    // --- Eliminar ---
-
     public boolean eliminarEPS(String epsId) {
-        if (cabeza == null) return false;
+        if (cabeza == null) {
+            return false;
+        }
         if (cabeza.getEpsId().equals(epsId)) {
             cabeza = (EPS) cabeza.getSiguiente();
             return true;
@@ -98,7 +109,9 @@ public class Multilista {
 
     public boolean eliminarIPS(String epsId, String ipsId) {
         EPS eps = buscarEPS(epsId);
-        if (eps == null || eps.getSubLista() == null) return false;
+        if (eps == null || eps.getSubLista() == null) {
+            return false;
+        }
         if (((IPS) eps.getSubLista()).getIpsId().equals(ipsId)) {
             eps.setSubLista(eps.getSubLista().getSiguiente());
             return true;
@@ -116,8 +129,6 @@ public class Multilista {
         return false;
     }
 
-    // --- Recorrer ---
-
     public void recorrer() {
         Nodo eps = cabeza;
         while (eps != null) {
@@ -133,4 +144,30 @@ public class Multilista {
             eps = eps.getSiguiente();
         }
     }
+
+    public Paciente pacienteMayorEdad() {
+        int mayorEdad = 0;
+        Paciente pacienteMayor = null;
+        Nodo epsActual = cabeza;
+
+        while (epsActual != null) {
+            EPS eps = (EPS) epsActual;
+            Nodo ipsActual = eps.getSubLista();
+
+            while (ipsActual != null) {
+                IPS ips = (IPS) ipsActual;
+
+                for (Paciente p : ips.getPacientes()) {
+                    if (p.getEdad() > mayorEdad) {
+                        mayorEdad = p.getEdad();
+                        pacienteMayor = p;
+                    }
+                }
+                ipsActual = ipsActual.getSiguiente();
+            }
+            epsActual = epsActual.getSiguiente();
+        }
+        return pacienteMayor;
+    }
+
 }

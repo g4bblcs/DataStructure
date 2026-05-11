@@ -42,5 +42,6 @@ public class Main {
         System.out.println("\n=== Eliminar IPS-003 de EPS-002 ===");
         ml.eliminarIPS("EPS-002", "IPS-003");
         ml.recorrer();
+        ml.pacienteMayorEdad().getNombre();
     }
 }
